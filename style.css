@@ -10,3 +10,13 @@ body {
   font-family: 'Manrope', system-ui, sans-serif;
   color: var(--basic-black);
 }
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: var(--p1) dotted 0.125rem;
+  outline-offset: 0.05em;
+}
