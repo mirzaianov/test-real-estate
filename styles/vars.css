@@ -1,6 +1,5 @@
 :root {
   /* Colors */
-
   /* Primary */
   --p1: #76564b;
   --p2: #e9dfc8;
@@ -26,8 +25,16 @@
   --basic-white--hover: var(--p2);
 
   /* Typography */
+  /* Mobile */
+  --mobile-h1: 2.25rem;
+  --mobile-h2: 1.75rem;
+  --mobile-h3: 1.5rem;
+  --mobile-h4: 1rem;
+  --mobile-h5: 1rem;
+  --mobile-body: 0.8125rem;
+  --mobile-body2: 0.75rem;
 
-  /* Desktop, Tablet */
+  /* Tablet, Desktop */
   --tablet-h1: 3.5rem;
   --tablet-h2: 2.25rem;
   --tablet-h3: 1.875rem;
@@ -37,12 +44,20 @@
   --tablet-body2: 0.875rem;
   --tablet-body3: 0.75rem;
 
-  /* Mobile */
-  --mobile-h1: 2.25rem;
-  --mobile-h2: 1.75rem;
-  --mobile-h3: 1.5rem;
-  --mobile-h4: 1rem;
-  --mobile-h5: 1rem;
-  --mobile-body: 0.8125rem;
-  --mobile-body2: 0.75rem;
+  /* Gaps */
+  /* Mobile, Tablet */
+  --mobile-gap1: 0.5rem;
+  --mobile-gap2: 0.5rem;
+  --mobile-gap3: 1rem;
+  --mobile-gap4: 1.875rem;
+  --mobile-gap5: 2.5rem;
+  --mobile-gap5: 3.75rem;
+
+  /* Desktop */
+  --desktop-gap1: 0.5rem;
+  --desktop-gap2: 1rem;
+  --desktop-gap3: 1.5rem;
+  --desktop-gap4: 3.75rem;
+  --desktop-gap5: 5rem;
+  --desktop-gap5: 7.5rem;
 }
