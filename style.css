@@ -2,12 +2,17 @@
 @import 'styles/grid.css';
 @import 'styles/reset.css';
 @import 'styles/fonts.css';
+@import 'styles/header.css';
+@import 'styles/hero.css';
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: 'Manrope', system-ui, sans-serif;
   color: var(--basic-black);
 }
