@@ -1,0 +1,48 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+  --p1: #76564b;
+  --p2: #e9dfc8;
+
+  /* Additional */
+  --a1: #b6a282;
+  --a2: #e9dfc8;
+
+  /* Basic */
+  --basic-black: #343434;
+  --basic-grey1: #646363;
+  --basic-grey2: #8d8d8d;
+  --basic-grey3: #d0d0d0;
+  --basic-grey4: #f1f3f8;
+  --basic-white: #ffffff;
+
+  /* Hover rules */
+  --p1--hover: var(--a1);
+  --p2--hover: var(--basic-grey1);
+  --basic-black--hover: var(--p1);
+  --basic-grey1--hover: var(--p1);
+  --a2--hover: var(--p2);
+  --basic-white--hover: var(--p2);
+
+  /* Typography */
+
+  /* Desktop, Tablet */
+  --tablet-h1: 3.5rem;
+  --tablet-h2: 2.25rem;
+  --tablet-h3: 1.875rem;
+  --tablet-h4: 1.25rem;
+  --tablet-h5: 1.25rem;
+  --tablet-body: 1rem;
+  --tablet-body2: 0.875rem;
+  --tablet-body3: 0.75rem;
+
+  /* Mobile */
+  --mobile-h1: 2.25rem;
+  --mobile-h2: 1.75rem;
+  --mobile-h3: 1.5rem;
+  --mobile-h4: 1rem;
+  --mobile-h5: 1rem;
+  --mobile-body: 0.8125rem;
+  --mobile-body2: 0.75rem;
+}
