@@ -16,13 +16,13 @@
 
 .hero__slides {
   display: flex;
-  width: 400%;
+  width: 400vw;
   height: 100%;
 }
 
 .hero__slide {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

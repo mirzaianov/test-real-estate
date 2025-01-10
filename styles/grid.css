@@ -10,6 +10,10 @@
   grid-column: span 2;
 }
 
+.col-3 {
+  grid-column: span 3;
+}
+
 .col-7 {
   grid-column: span 7;
 }

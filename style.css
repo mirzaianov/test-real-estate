@@ -4,6 +4,7 @@
 @import 'styles/fonts.css';
 @import 'styles/header.css';
 @import 'styles/hero.css';
+@import 'styles/layouts.css';
 
 html {
   scroll-behavior: smooth;
@@ -15,6 +16,8 @@ body {
   flex-direction: column;
   font-family: 'Manrope', system-ui, sans-serif;
   font-style: normal;
+  font-weight: 300;
+  font-size: clamp(var(--mobile-body), 2.5vw, var(--tablet-body));
   color: var(--basic-white);
   font-variant-numeric: lining-nums proportional-nums;
 }
@@ -42,7 +45,14 @@ h1 {
 }
 
 h2 {
-  font-size: var(--tablet-h4);
+  font-size: clamp(var(--mobile-h2), 6vw, var(--tablet-h2));
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: clamp(var(--mobile-h4), 4vw, var(--tablet-h4));
   font-weight: 300;
   line-height: 1.6;
 }
@@ -56,8 +66,22 @@ h2 {
   background: var(--p2, #e9dfc8);
   color: var(--basic-black, #343434);
   font-size: var(--tablet-body2);
+  font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+}
+
+.button--secondary {
+  color: var(--basic-white, #ffffff);
+  background: var(--p1, #76564b);
+}
+
+.body-2 {
+  font-size: clamp(var(--mobile-body2), 3vw, var(--tablet-body2));
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.075rem;
   text-transform: uppercase;
 }
 
