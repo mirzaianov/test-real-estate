@@ -72,3 +72,15 @@ a:link,
 a:visited {
   text-decoration: none;
 }
+
+/*
+  10. Remove button styles
+*/
+button {
+  /* Remove all default styles */
+  all: unset; /* Modern browsers - removes all styles */
+
+  /* Fix for mobile Safari */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

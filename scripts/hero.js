@@ -41,21 +41,21 @@ export default function startHeroSlides() {
     return setInterval(slideToNext, 5000);
   }
 
-  let slideInterval = startInterval();
+  // let slideInterval = startInterval();
 
-  slides.addEventListener('transitionend', () => {
-    if (currentIndex === totalSlides) {
-      currentIndex = 0;
-      updateSlider(currentIndex, false);
-    }
-  });
+  // slides.addEventListener('transitionend', () => {
+  //   if (currentIndex === totalSlides) {
+  //     currentIndex = 0;
+  //     updateSlider(currentIndex, false);
+  //   }
+  // });
 
-  indicators.forEach((indicator, i) => {
-    indicator.addEventListener('click', () => {
-      currentIndex = i;
-      updateSlider(currentIndex);
-      clearInterval(slideInterval);
-      slideInterval = startInterval();
-    });
-  });
+  // indicators.forEach((indicator, i) => {
+  //   indicator.addEventListener('click', () => {
+  //     currentIndex = i;
+  //     updateSlider(currentIndex);
+  //     clearInterval(slideInterval);
+  //     slideInterval = startInterval();
+  //   });
+  // });
 }

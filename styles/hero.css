@@ -29,6 +29,7 @@
   display: flex;
   flex-basis: 100%;
   align-items: end;
+  padding-bottom: 3rem;
 }
 
 .hero__slide-first {
@@ -44,6 +45,10 @@
 }
 
 .hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .hero__indicators {
