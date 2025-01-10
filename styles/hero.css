@@ -53,23 +53,21 @@
 
 .hero__indicators {
   position: absolute;
-  bottom: 20px;
+  width: 100%;
+  height: 0.125rem;
+  bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
+  gap: var(--mobile-gap3);
 }
 
 .hero__indicator {
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
-  opacity: 0.5;
+  height: 100%;
+  background-color: var(--basic-grey1);
   cursor: pointer;
-  transition: opacity 2.5s ease;
+  transition: background-color 2.5s ease;
 }
 
 .hero__indicator--active {
-  opacity: 1;
+  background-color: var(--basic-white);
 }
