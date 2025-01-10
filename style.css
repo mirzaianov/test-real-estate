@@ -14,7 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Manrope', system-ui, sans-serif;
-  color: var(--basic-black);
+  color: var(--basic-white);
+  font-variant-numeric: lining-nums proportional-nums;
 }
 
 a:focus,
@@ -25,4 +26,17 @@ textarea:focus {
   box-shadow: none;
   outline: var(--p1) dotted 0.125rem;
   outline-offset: 0.05em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
