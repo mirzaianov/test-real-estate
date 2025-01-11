@@ -3,6 +3,7 @@
 @import 'styles/reset.css';
 @import 'styles/fonts.css';
 @import 'styles/header.css';
+@import 'styles/main.css';
 @import 'styles/hero.css';
 @import 'styles/layouts.css';
 
@@ -11,15 +12,21 @@ html {
 }
 
 body {
-  height: 100%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+
+  /* Font Start */
   font-family: 'Manrope', system-ui, sans-serif;
   font-style: normal;
+  font-size: var(--mobile-body1);
   font-weight: 300;
-  font-size: clamp(var(--mobile-body), 2.5vw, var(--tablet-body));
-  color: var(--basic-white);
-  font-variant-numeric: lining-nums proportional-nums;
+  color: var(--basic-white, #ffffff);
+  /* Font End */
 }
 
 a:focus,
@@ -28,33 +35,52 @@ input:focus,
 select:focus,
 textarea:focus {
   box-shadow: none;
-  outline: var(--basic-white) dotted 0.125rem;
+  outline-color: var(--basic-white, #ffffff);
+  outline-style: dotted;
+  outline-width: 0.125rem;
   outline-offset: 0.05em;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-
 h1 {
-  font-size: clamp(var(--mobile-h1), 6vw, var(--tablet-h1));
-  font-weight: 400;
-  line-height: 1.2;
+  font-size: var(--mobile-h1);
+  font-weight: 200;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: clamp(var(--mobile-h2), 6vw, var(--tablet-h2));
+  font-size: var(--mobile-h2);
   font-weight: 300;
-  line-height: 1.6;
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: var(--mobile-h3);
+  font-weight: 200;
+  line-height: 1.4;
+}
+
 h4 {
-  font-size: clamp(var(--mobile-h4), 4vw, var(--tablet-h4));
+  font-size: var(--mobile-h4);
   font-weight: 300;
-  line-height: 1.6;
+}
+
+h5 {
+  font-size: var(--mobile-h5);
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.body2 {
+  font-size: var(--mobile-body2);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
+
+.body3 {
+  display: none;
 }
 
 .button {
@@ -63,7 +89,7 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: var(--mobile-gap1);
-  background: var(--p2, #e9dfc8);
+  background-color: var(--p2, #e9dfc8);
   color: var(--basic-black, #343434);
   font-size: var(--tablet-body2);
   font-weight: 400;
@@ -74,17 +100,52 @@ h4 {
 
 .button--secondary {
   color: var(--basic-white, #ffffff);
-  background: var(--p1, #76564b);
-}
-
-.body-2 {
-  font-size: clamp(var(--mobile-body2), 3vw, var(--tablet-body2));
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.075rem;
-  text-transform: uppercase;
+  background-color: var(--p1, #76564b);
 }
 
 .nowrap {
   white-space: nowrap;
+}
+
+/* Tablet screens: 640px - x */
+@media (min-width: 40rem) {
+  body {
+    font-size: var(--tablet-body1);
+  }
+
+  h1 {
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: var(--tablet-h1);
+  }
+
+  h2 {
+    font-size: var(--tablet-h2);
+    font-weight: 200;
+    line-height: 1.4;
+  }
+
+  h3 {
+    font-size: var(--tablet-h3);
+  }
+
+  h4 {
+    font-size: var(--tablet-h4);
+  }
+
+  h5 {
+    font-size: var(--tablet-h5);
+    letter-spacing: 0.25rem;
+  }
+
+  .body2 {
+    font-size: var(--tablet-body2);
+    letter-spacing: 0.0875rem;
+  }
+
+  .body3 {
+    display: inline-block;
+    font-size: var(--tablet-body3);
+    font-weight: 300;
+    line-height: 1.4;
+  }
 }

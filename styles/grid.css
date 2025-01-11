@@ -1,4 +1,4 @@
-/* x - 639px */
+/*Mobile screens: 0px - x */
 .grid-container {
   display: grid;
   padding-inline: var(--mobile-gap3);
@@ -22,17 +22,17 @@
   grid-column: 1 / -1;
 }
 
-/* 640px - 1247px */
+/* Tablet screens: 640px - x */
 @media (min-width: 40rem) {
   .grid-container {
     padding-inline: var(--desktop-gap3);
   }
 }
 
-/* 1248px - x */
+/* Desktop screens: 1248px - x */
 @media (min-width: 78rem) {
   .grid-container {
-    padding-inline: auto;
+    padding-inline: 0;
     grid-template-columns: repeat(12, 4.875rem);
     gap: var(--desktop-gap3);
   }

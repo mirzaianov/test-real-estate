@@ -31,7 +31,7 @@
   --mobile-h3: 1.5rem;
   --mobile-h4: 1rem;
   --mobile-h5: 1rem;
-  --mobile-body: 0.8125rem;
+  --mobile-body1: 0.8125rem;
   --mobile-body2: 0.75rem;
 
   /* Tablet, Desktop */
@@ -40,7 +40,7 @@
   --tablet-h3: 1.875rem;
   --tablet-h4: 1.25rem;
   --tablet-h5: 1.25rem;
-  --tablet-body: 1rem;
+  --tablet-body1: 1rem;
   --tablet-body2: 0.875rem;
   --tablet-body3: 0.75rem;
 

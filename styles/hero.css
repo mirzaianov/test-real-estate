@@ -16,8 +16,8 @@
 
 .hero__slides {
   display: flex;
-  width: 400vw;
-  height: 100%;
+  width: 300vw;
+  height: 100vh;
 }
 
 .hero__slide {
@@ -58,16 +58,32 @@
   bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.hero__indicators-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   gap: var(--mobile-gap3);
+  grid-column: 1 / -1;
 }
 
 .hero__indicator {
   height: 100%;
-  background-color: var(--basic-grey1);
+  width: 100%;
+  background-color: var(--basic-grey1, #646363);
   cursor: pointer;
   transition: background-color 1s ease;
 }
 
 .hero__indicator--active {
-  background-color: var(--basic-white);
+  background-color: var(--basic-white, #ffffff);
+}
+
+/* Desktop screens: 1248px - x */
+@media (min-width: 78rem) {
+  .hero__indicators-wrapper {
+    grid-column: span 4;
+  }
 }

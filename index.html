@@ -25,35 +25,39 @@
       name="description"
       content='Все выгодные предложения от застройщика СЗ "А112"'
     />
-    <script
+    <!-- <script
       defer
       type="module"
       src="script.js"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <!-- # Header -->
-    <header class="header grid-container">
-      <div class="header__menu">
-        <img
-          src="assets/icons/menu.svg"
-          alt="Menu"
-        />
-      </div>
-      <div class="header__company-logo">
-        <img
-          src="assets/icons/company-logo.svg"
-          alt="Company Logo"
-        />
-      </div>
-      <div class="header__company-name">
-        <img
-          src="assets/icons/company-name.svg"
-          alt="Company Name"
-        />
+    <header class="header">
+      <div class="grid-container">
+        <div class="header__wrapper col-full">
+          <div class="header__menu">
+            <img
+              src="assets/icons/menu.svg"
+              alt="Menu"
+            />
+          </div>
+          <div class="header__company-logo">
+            <img
+              src="assets/icons/company-logo.svg"
+              alt="Company Logo"
+            />
+          </div>
+          <div class="header__company-name">
+            <img
+              src="assets/icons/company-name.svg"
+              alt="Company Name"
+            />
+          </div>
+        </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <!-- # Hero Section -->
       <section class="hero">
         <div class="hero__slides">
@@ -76,7 +80,7 @@
                 г.Якутске</h1
               >
               <h4>
-                В 10 минутах от центра, экологиччески чистый район. Цены от
+                В 10 минутах от центра, экологически чистый район. Цены от
                 застройщика на квартиры и коммерческую недвижимость.
               </h4>
               <button class="button">Оставить заявку</button>
@@ -84,18 +88,20 @@
           </div>
         </div>
         <div class="hero__indicators grid-container">
-          <span
-            class="hero__indicator col-2 hero__indicator--active"
-            data-index="0"
-          ></span>
-          <span
-            class="hero__indicator col-2"
-            data-index="1"
-          ></span>
-          <span
-            class="hero__indicator col-2"
-            data-index="2"
-          ></span>
+          <div class="hero__indicators-wrapper">
+            <span
+              class="hero__indicator hero__indicator--active"
+              data-index="0"
+            ></span>
+            <span
+              class="hero__indicator"
+              data-index="1"
+            ></span>
+            <span
+              class="hero__indicator"
+              data-index="2"
+            ></span>
+          </div>
         </div>
       </section>
       <!-- # Layouts Section -->
@@ -116,7 +122,7 @@
               </div>
               <h4>Двухкомнатные квартиры</h4>
               <span>средняя площадь 69 кв. м</span>
-              <span class="body-2">стандарт</span>
+              <span class="body2">стандарт</span>
             </div>
             <div class="layouts__flat">
               <div class="layouts__flat-image">
@@ -126,7 +132,6 @@
                 />
               </div>
               <h4>Трехкомнатные квартиры</h4>
-              <!-- ! Ошибка в макете -->
               <span>средняя площадь 65 кв. м</span>
               <span class="body-2">евростандарт</span>
             </div>
@@ -141,7 +146,7 @@
               </div>
               <h4>Четырехкомнатные квартиры</h4>
               <span>средняя площадь 91 кв. м</span>
-              <span class="body-2">евростандарт</span>
+              <span class="body2">евростандарт</span>
             </div>
           </div>
         </div>
