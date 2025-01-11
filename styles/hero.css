@@ -12,6 +12,7 @@
   height: 100vh;
   height: 100dvh;
   overflow: hidden;
+  padding-block: 0;
 }
 
 .hero__slides {

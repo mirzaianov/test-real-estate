@@ -4,7 +4,6 @@
   flex-direction: column;
   gap: var(--mobile-gap3);
   height: 60.625rem;
-  padding-block: var(--mobile-gap5);
   background: linear-gradient(
       180deg,
       rgba(39, 102, 226, 0.1) 0%,

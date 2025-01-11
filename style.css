@@ -74,6 +74,10 @@ h5 {
   text-transform: uppercase;
 }
 
+section {
+  padding-block: var(--mobile-gap5);
+}
+
 .body2 {
   font-size: var(--mobile-body2);
   font-weight: 400;
