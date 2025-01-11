@@ -1,0 +1,118 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mobile-gap3);
+  font-size: var(--tablet-body1);
+}
+
+.contacts__title {
+  margin: 0 auto;
+  font-size: var(--tablet-h4);
+}
+
+.contacts__info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__info-item {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: var(--desktop-gap3);
+  border: 1px solid var(--p1, #76564b);
+}
+
+.contacts__info-item--address {
+  border-left: none;
+}
+
+.contacts__info-item--schedule {
+  border-right: none;
+}
+
+.contacts__info-phones,
+.contacts__info-week {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__info-lunch {
+  color: var(--basic-grey2, #8d8d8d);
+}
+
+.contacts__info-emails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__info-emails-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: var(--desktop-gap3);
+}
+
+.contacts__form-title {
+  font-size: var(--tablet-h4);
+}
+
+.contacts__form-input {
+  display: flex;
+  padding: 0.25rem 0rem 0.875rem 0rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-bottom: 1px solid var(--basic-white, #fff);
+
+  &::placeholder {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.3;
+  }
+}
+
+.contacts__form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--desktop-gap3);
+  cursor: pointer;
+}
+
+/* Hide default checkbox but keep it accessible */
+.contacts__form-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--basic-white, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Add checkmark when checked */
+.contacts__form-checkbox:checked::after {
+  content: '';
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid var(--basic-white, #fff);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.contacts__form-checkbox-wrapper label {
+  cursor: pointer;
+}

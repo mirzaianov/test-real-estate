@@ -8,6 +8,7 @@
 @import 'styles/layouts.css';
 @import 'styles/about.css';
 @import 'styles/map.css';
+@import 'styles/contacts.css';
 
 html {
   scroll-behavior: smooth;
@@ -86,7 +87,10 @@ section {
 }
 
 .body3 {
-  display: none;
+  display: inline-block;
+  font-size: var(--tablet-body3);
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 .button {
@@ -146,12 +150,5 @@ section {
   .body2 {
     font-size: var(--tablet-body2);
     letter-spacing: 0.0875rem;
-  }
-
-  .body3 {
-    display: inline-block;
-    font-size: var(--tablet-body3);
-    font-weight: 300;
-    line-height: 1.4;
   }
 }
