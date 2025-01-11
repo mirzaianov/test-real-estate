@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   /* justify-content: flex-start; */
   align-items: center;
+  background-color: var(--basic-black, #343434);
 
   /* Font Start */
   font-family: 'Manrope', system-ui, sans-serif;

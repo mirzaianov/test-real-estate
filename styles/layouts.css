@@ -4,7 +4,6 @@
   padding-block: var(--mobile-gap5);
   gap: var(--mobile-gap3);
   border-bottom: 1px solid var(--Basic-Black, #343434);
-  background-color: var(--Basic-Black, #343434);
 }
 
 .layouts__flats-wrapper {
