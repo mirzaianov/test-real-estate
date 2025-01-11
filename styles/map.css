@@ -1,0 +1,12 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 36.25rem;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  filter: grayscale(1) brightness(1);
+}
