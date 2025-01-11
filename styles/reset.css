@@ -109,3 +109,14 @@ li::marker {
 li::-webkit-details-marker {
   display: none;
 }
+
+/*
+  12. Disable iframe settings
+*/
+iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
