@@ -54,6 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--basic-black, #343434);
   }
 
   .header__wrapper {
@@ -87,5 +88,11 @@
 
   .header__navbar-item--active a {
     font-weight: 800;
+  }
+
+  .header__company-name {
+    width: 14.5625rem;
+    height: 7.4375rem;
+    padding: 2.3125rem 3.3125rem;
   }
 }

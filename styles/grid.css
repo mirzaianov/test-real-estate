@@ -2,8 +2,8 @@
 .grid-container {
   display: grid;
   padding-inline: var(--mobile-gap3);
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--mobile-gap3);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(0px, calc(100vw - 320px), var(--mobile-gap3));
 }
 
 .col-2 {
@@ -25,6 +25,7 @@
 /* Tablet screens: 640px - x */
 @media (min-width: 40rem) {
   .grid-container {
+    gap: var(--mobile-gap3);
     padding-inline: var(--desktop-gap3);
   }
 }
