@@ -11,3 +11,10 @@
   filter: grayscale(1) brightness(1);
   padding-block: 0;
 }
+
+/* Tablet screens: 640px - x */
+@media (min-width: 40rem) {
+  .map {
+    height: 42.75rem;
+  }
+}
