@@ -100,6 +100,10 @@
     padding-bottom: 3rem;
   }
 
+  .hero__content > button {
+    width: fit-content;
+  }
+
   .hero__indicators {
     bottom: 5rem;
   }

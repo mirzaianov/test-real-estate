@@ -105,7 +105,7 @@ footer {
 }
 
 .button {
-  width: min(100%, fit-content);
+  width: auto;
   display: flex;
   padding: 1rem 1.5rem;
   justify-content: center;
@@ -124,6 +124,10 @@ footer {
 .button--secondary {
   color: var(--basic-white, #ffffff);
   background-color: var(--p1, #76564b);
+}
+
+.button--flat {
+  display: none;
 }
 
 .nowrap {
@@ -166,7 +170,19 @@ footer {
     letter-spacing: 0.0875rem;
   }
 
-  .button {
-    width: fit-content;
+  .button--flat {
+    display: flex;
+  }
+
+  .button--layouts {
+    display: none;
+  }
+}
+
+/* Desktop screens: 1248px - x */
+@media (min-width: 78rem) {
+  section,
+  footer {
+    padding-block: var(--desktop-gap5);
   }
 }
