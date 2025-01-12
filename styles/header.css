@@ -31,6 +31,10 @@
   flex-shrink: 0;
 }
 
+.header__navbar {
+  display: none;
+}
+
 .header__company-name {
   margin-left: auto;
   display: flex;
@@ -50,5 +54,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .header__wrapper {
+    gap: var(--desktop-gap3);
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .header__navbar-item a {
+    color: var(--basic-white, #fff);
+    transition: color 0.3s ease;
+  }
+
+  .header__navbar-item a {
+    color: var(--basic-white, #fff);
+    transition: color 0.3s ease;
+  }
+
+  .header__navbar-item--active a {
+    font-weight: 800;
   }
 }
