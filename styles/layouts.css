@@ -1,8 +1,10 @@
 .layouts {
+}
+
+.layouts__wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--mobile-gap3);
-  border-bottom: 1px solid var(--basic-black, #343434);
 }
 
 .layouts__flats-wrapper {

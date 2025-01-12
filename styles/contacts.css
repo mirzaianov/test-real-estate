@@ -1,8 +1,11 @@
 .contacts {
+  font-size: var(--tablet-body1);
+}
+
+.contacts__wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--mobile-gap3);
-  font-size: var(--tablet-body1);
 }
 
 .contacts__title {
