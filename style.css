@@ -11,6 +11,11 @@
 @import 'styles/contacts.css';
 @import 'styles/footer.css';
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
