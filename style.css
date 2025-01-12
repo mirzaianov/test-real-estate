@@ -9,6 +9,7 @@
 @import 'styles/about.css';
 @import 'styles/map.css';
 @import 'styles/contacts.css';
+@import 'styles/footer.css';
 
 html {
   scroll-behavior: smooth;
@@ -74,7 +75,8 @@ h5 {
   text-transform: uppercase;
 }
 
-section {
+section,
+footer {
   padding-block: var(--mobile-gap5);
 }
 

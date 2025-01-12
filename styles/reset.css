@@ -68,9 +68,7 @@ h6 {
   isolation: isolate;
 }
 
-a,
-a:link,
-a:visited {
+a {
   text-decoration: none;
 }
 
