@@ -56,6 +56,7 @@
 .contacts__info-emails-item {
   display: flex;
   flex-direction: column;
+  gap: var(--mobile-gap2);
 }
 
 .contacts__form {
@@ -84,18 +85,13 @@
 
 .contacts__form-input {
   flex-basis: 100%;
-  display: flex;
-  padding: 0.25rem 0rem 0.875rem 0rem;
-  align-items: flex-start;
-  gap: 0.625rem;
-  align-self: stretch;
+  padding: 0.25rem 0rem 0.625rem 0rem;
   border-bottom: 1px solid var(--basic-white, #fff);
 
   &::placeholder {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    opacity: 0.3;
   }
 }
 
@@ -106,28 +102,24 @@
   cursor: pointer;
 }
 
-/* Hide default checkbox but keep it accessible */
 .contacts__form-checkbox {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 1.25rem;
+  position: relative;
   height: 1.25rem;
+  aspect-ratio: 1 / 1;
   border: 1px solid var(--basic-white, #fff);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Add checkmark when checked */
 .contacts__form-checkbox:checked::after {
-  content: '';
-  width: 0.3rem;
-  height: 0.6rem;
-  border: solid var(--basic-white, #fff);
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  content: url('../assets/icons/checkmark.svg');
   display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1rem;
+  aspect-ratio: 1 / 1;
 }
 
 .contacts__form-checkbox-wrapper label {

@@ -46,7 +46,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -5rem;
+  bottom: -2.5rem;
   width: 18.3125rem;
   height: 20.5625rem;
 }
@@ -89,10 +89,6 @@
     text-transform: uppercase;
     font-variant-numeric: lining-nums proportional-nums;
     font-size: var(--tablet-h1);
-  }
-
-  .about__nowrap {
-    white-space: nowrap;
   }
 
   .about__deadline {
