@@ -107,6 +107,9 @@
 
 /* Tablet screens: 640px - x */
 @media (min-width: 40rem) {
+  .menu__header {
+    padding-right: var(--desktop-gap3);
+  }
 }
 
 /* Desktop screens: 1248px - x */
