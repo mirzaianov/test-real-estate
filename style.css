@@ -10,13 +10,11 @@
 @import 'styles/map.css';
 @import 'styles/contacts.css';
 @import 'styles/footer.css';
+@import 'styles/menu.css';
 
 html,
 body {
   overflow-x: hidden;
-}
-
-html {
   scroll-behavior: smooth;
 }
 

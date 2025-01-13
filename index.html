@@ -25,23 +25,23 @@
       name="description"
       content='Все выгодные предложения от застройщика СЗ "А112"'
     />
-    <!-- <script
+    <script
       defer
       type="module"
       src="script.js"
-    ></script> -->
+    ></script>
   </head>
   <body>
     <!-- # Header -->
     <header class="header">
       <div class="grid-container">
         <div class="header__wrapper col-full">
-          <div class="header__menu">
+          <button class="header__menu">
             <img
               src="assets/icons/menu.svg"
               alt="Menu"
             />
-          </div>
+          </button>
           <div class="header__company-logo">
             <img
               src="assets/icons/company-logo.svg"
@@ -110,6 +110,14 @@
                   В 10 минутах от центра, экологически чистый район. Цены от
                   застройщика на квартиры и коммерческую недвижимость.
                 </h4>
+                <button class="button button--hero">Оставить заявку</button>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide hero__slide-first">
+            <div class="grid-container">
+              <div class="hero__content col-full">
+                <h1>Все выгодные предложения от застройщика с3 “а112”</h1>
                 <button class="button button--hero">Оставить заявку</button>
               </div>
             </div>
@@ -355,5 +363,83 @@
         </div>
       </div>
     </footer>
+    <dialog class="menu">
+      <div class="menu__header">
+        <button class="menu__close">
+          <img
+            src="assets/icons/menu.svg"
+            alt="Menu"
+          />
+        </button>
+        <div class="menu__company-logo">
+          <img
+            src="assets/icons/company-logo.svg"
+            alt="Company Logo"
+          />
+        </div>
+        <nav class="menu__navbar">
+          <ul class="menu__navbar-list">
+            <li class="menu__navbar-item menu__navbar-item--active body2"
+              ><a href="#hero">Акции</a></li
+            >
+            <li class="menu__navbar-item body2"
+              ><a href="#layouts">Квартиры</a></li
+            >
+            <li class="menu__navbar-item body2"
+              ><a href="#about">О комплексе</a></li
+            >
+            <li class="menu__navbar-item body2"
+              ><a href="#map">Расположение</a></li
+            >
+            <li class="menu__navbar-item body2"
+              ><a href="#contacts">Контакты</a></li
+            >
+          </ul>
+        </nav>
+        <div class="menu__company-name">
+          <img
+            src="assets/icons/company-name.svg"
+            alt="Company Name"
+          />
+        </div>
+      </div>
+      <ul class="menu__list body2">
+        <li class="menu__item menu__item--active">
+          <a
+            href="#hero"
+            class="menu__link"
+            >Акции</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            href="#layouts"
+            class="menu__link"
+            >Квартиры</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            href="#about"
+            class="menu__link"
+            >О комплексе</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            href="#map"
+            class="menu__link"
+            >Расположение</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            href="#contacts"
+            class="menu__link"
+            >Контакты</a
+          >
+        </li>
+      </ul>
+    </dialog>
   </body>
 </html>

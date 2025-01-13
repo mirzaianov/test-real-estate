@@ -81,11 +81,6 @@
     transition: color 0.3s ease;
   }
 
-  .header__navbar-item a {
-    color: var(--basic-white, #fff);
-    transition: color 0.3s ease;
-  }
-
   .header__navbar-item--active a {
     font-weight: 800;
   }

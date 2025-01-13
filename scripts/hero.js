@@ -57,4 +57,6 @@ export default function startHeroSlides() {
       slideInterval = startInterval();
     });
   });
+
+  // TODO: Fix smooth close on ESC key
 }
