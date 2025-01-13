@@ -126,22 +126,6 @@
   cursor: pointer;
 }
 
-/* Tablet screens: 640px - x */
-@media (min-width: 40rem) {
-  /* .contacts__info-item {
-    flex-basis: 100%;
-  }
-
-  .contacts__info-item--address {
-    border-right: none;
-    flex-shrink: 0;
-  }
-
-  .contacts__info-item--schedule {
-    flex-shrink: 1;
-  } */
-}
-
 /* Custom screens: 880px - x */
 @media (min-width: 55rem) {
   .contacts__wrapper {

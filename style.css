@@ -22,7 +22,6 @@ html {
 
 body {
   position: relative;
-  /* width: 100svw; */
   height: 100vh;
   height: 100dvh;
   display: flex;
