@@ -37,7 +37,7 @@ export default function startHeroSlides() {
   }
 
   function startInterval() {
-    return setInterval(slideToNext, 2000);
+    return setInterval(slideToNext, 5000);
   }
 
   let slideInterval = startInterval();
