@@ -1,5 +1,6 @@
 /*Mobile screens: 0px - x */
 .grid-container {
+  width: 100%;
   display: grid;
   padding-inline: var(--mobile-gap3);
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -25,6 +26,7 @@
 /* Tablet screens: 640px - x */
 @media (min-width: 40rem) {
   .grid-container {
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--mobile-gap3);
     padding-inline: var(--desktop-gap3);
   }
@@ -33,6 +35,7 @@
 /* Desktop screens: 1248px - x */
 @media (min-width: 78rem) {
   .grid-container {
+    width: auto;
     padding-inline: 0;
     grid-template-columns: repeat(12, 4.875rem);
     gap: var(--desktop-gap3);
