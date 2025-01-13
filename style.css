@@ -39,7 +39,7 @@ body {
   /* Font End */
 }
 
-a {
+.link {
   color: var(--basic-white, #fff);
   text-decoration-line: underline;
   text-decoration-style: solid;
