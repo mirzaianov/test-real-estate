@@ -3,10 +3,9 @@ export default function startHeroSlides() {
   const indicators = document.querySelectorAll('.hero__indicator');
 
   let currentIndex = 0;
-  const totalSlides = slides.children.length;
-
+  const totalSlides = slides.children.length - 1;
   const firstSlide = slides.children[0];
-  slides.appendChild(firstSlide.cloneNode(true));
+  const firstSlideWidth = firstSlide.offsetWidth;
 
   function updateSlider(index, useTransition = true) {
     if (useTransition) {
@@ -15,7 +14,7 @@ export default function startHeroSlides() {
       slides.style.transition = 'none';
     }
 
-    slides.style.transform = `translateX(-${index * 100}vw)`;
+    slides.style.transform = `translateX(-${index * firstSlideWidth}px)`;
 
     indicators.forEach((indicator, i) => {
       indicator.classList.toggle(
@@ -38,7 +37,7 @@ export default function startHeroSlides() {
   }
 
   function startInterval() {
-    return setInterval(slideToNext, 5000);
+    return setInterval(slideToNext, 2000);
   }
 
   let slideInterval = startInterval();
