@@ -8,7 +8,7 @@
   border: 1px solid var(--p1, #76564b);
   background: var(--basic-black, #343434);
   padding: 1.5rem;
-  transition: right 0.8s cubic-bezier(0.25, -0.25, 0.1, 1.2);
+  transition: right 1s cubic-bezier(0.25, -0.25, 0.1, 1.2);
 }
 
 .cookies.open {
