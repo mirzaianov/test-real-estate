@@ -20,7 +20,7 @@
 
 .policy-page__breadcrumbs-list {
   display: flex;
-  align-items: center;
+  align-items: start;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -45,16 +45,14 @@
   }
 }
 
-.policy-page__breadcrumbs-current {
-}
-
 .policy-page__title {
   font-weight: 200;
 }
 
 .policy-page__content {
   display: flex;
-  gap: var(--desktop-gap3);
+  flex-direction: column;
+  gap: var(--mobile-gap3);
 
   /* .policy-page__column */
   /* First list starts counting */
@@ -152,4 +150,13 @@
 
 .policy-page__description {
   margin-left: auto;
+}
+
+/* Tablet screens: 640px - x */
+@media (min-width: 40rem) {
+  .policy-page__content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--desktop-gap3);
+  }
 }
