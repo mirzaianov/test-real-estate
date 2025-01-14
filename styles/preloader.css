@@ -1,0 +1,50 @@
+.preloader {
+  border: none;
+  padding: 0;
+  /* background-color: var(--basic-black, #343434); */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader::backdrop {
+  background-color: var(--basic-black, #343434);
+}
+
+.preloader__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--mobile-gap3);
+}
+
+.preloader__image {
+  max-width: 17.875rem;
+}
+
+.preloader__image img {
+  width: 100%;
+}
+
+.preloader__progress {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader__progress-bar {
+  height: 0.25rem;
+  width: 1.5rem;
+  background: var(--p1, #76564b);
+  animation: progressExpand 5s infinite;
+}
+
+@keyframes progressExpand {
+  100% {
+    width: 100%;
+  }
+}
