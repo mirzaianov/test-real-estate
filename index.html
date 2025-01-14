@@ -420,16 +420,26 @@
       </div>
     </dialog>
     <!-- # WhatsApp -->
-    <div
-      class="whatsapp"
-      aria-label="Заказать звонок">
-      <a
-        class="whatsapp__icon"
-        href="#hero">
-        <img
-          src="assets/icons/whatsapp.svg"
-          alt="" />
-      </a>
+    <div class="whatsapp__wrapper">
+      <svg viewBox="0 0 100 100">
+        <path
+          id="circle"
+          d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+        <text>
+          <textPath href="#circle">Заказать звонок</textPath>
+        </text>
+      </svg>
+      <div
+        class="whatsapp"
+        aria-label="Заказать звонок">
+        <a
+          class="whatsapp__icon"
+          href="#hero">
+          <img
+            src="assets/icons/whatsapp.svg"
+            alt="" />
+        </a>
+      </div>
     </div>
     <!-- # Cookies Modal -->
     <dialog
