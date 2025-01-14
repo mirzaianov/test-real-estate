@@ -32,6 +32,7 @@ export default function openMenu() {
   // Close on click the escape key
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && menu.classList.contains('open')) {
+      event.preventDefault();
       menu.classList.remove('open');
     }
   });
