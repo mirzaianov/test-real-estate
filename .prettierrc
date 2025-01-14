@@ -5,7 +5,6 @@
   "tabWidth": 2,
   "semi": true,
   "bracketSameLine": false,
-  "bracketSpacing": true,
   "arrowParens": "always",
   "htmlWhitespaceSensitivity": "strict",
   "singleAttributePerLine": true

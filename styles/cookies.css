@@ -1,19 +1,18 @@
 .cookies {
-  min-width: 37.5rem;
+  width: 75%;
   position: fixed;
   top: auto;
   bottom: 3rem;
-  right: 100%;
+  right: -100%;
   left: auto;
   border: 1px solid var(--p1, #76564b);
   background: var(--basic-black, #343434);
   padding: 1.5rem;
-  transform: translateY(-50%);
-  transition: right 0.5s ease-in-out;
+  transition: right 0.8s cubic-bezier(0.25, -0.25, 0.1, 1.2);
 }
 
 .cookies.open {
-  right: 0;
+  right: 3rem;
 }
 
 .cookies::backdrop {
@@ -22,6 +21,7 @@
 
 .cookies__wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: var(--desktop-gap3);
 }
@@ -30,4 +30,19 @@
   font-size: var(--tablet-body1);
   color: var(--basic-white, #fff);
   flex: 1 0 0;
+}
+
+/* Tablet screens: 640px - x */
+@media (min-width: 40rem) {
+  .cookies {
+    width: 80%;
+    max-width: 37.5rem;
+  }
+
+  .cookies__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--desktop-gap3);
+  }
 }
