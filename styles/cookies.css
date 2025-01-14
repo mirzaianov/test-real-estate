@@ -1,0 +1,33 @@
+.cookies {
+  min-width: 37.5rem;
+  position: fixed;
+  top: auto;
+  bottom: 3rem;
+  right: 100%;
+  left: auto;
+  border: 1px solid var(--p1, #76564b);
+  background: var(--basic-black, #343434);
+  padding: 1.5rem;
+  transform: translateY(-50%);
+  transition: right 0.5s ease-in-out;
+}
+
+.cookies.open {
+  right: 0;
+}
+
+.cookies::backdrop {
+  background: none;
+}
+
+.cookies__wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--desktop-gap3);
+}
+
+.cookies__description {
+  font-size: var(--tablet-body1);
+  color: var(--basic-white, #fff);
+  flex: 1 0 0;
+}

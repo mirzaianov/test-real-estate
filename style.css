@@ -11,6 +11,7 @@
 @import 'styles/contacts.css';
 @import 'styles/footer.css';
 @import 'styles/menu.css';
+@import 'styles/cookies.css';
 
 html,
 body {
@@ -132,6 +133,12 @@ footer {
 .button--secondary {
   color: var(--basic-white, #ffffff);
   background-color: var(--p1, #76564b);
+}
+
+.button--stroke {
+  color: var(--basic-white, #ffffff);
+  background-color: transparent;
+  border: 1px solid var(--Basic-White, #fff);
 }
 
 .button--hero {
