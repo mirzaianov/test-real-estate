@@ -1,10 +1,11 @@
 export default function startPreloader() {
-  document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
     const preloader = document.querySelector('.preloader');
-    preloader.showModal();
 
-    window.addEventListener('load', () => {
-      preloader.close();
+    preloader.classList.add('preloader--hidden');
+
+    preloader.addEventListener('transitionend', () => {
+      document.body.removeChild(document.querySelector('.preloader'));
     });
   });
 }
