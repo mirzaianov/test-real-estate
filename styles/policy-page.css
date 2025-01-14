@@ -1,0 +1,155 @@
+.policy-page {
+  padding-top: 3rem;
+}
+
+.policy-page__header {
+  position: relative;
+}
+
+.policy-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 3rem; */
+  /* padding-bottom: 5rem; */
+  gap: 3rem;
+}
+
+.policy-page__breadcrumbs {
+  padding: 20px 0;
+}
+
+.policy-page__breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.policy-page__breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.policy-page__breadcrumbs-item:not(:last-child)::after {
+  content: '/';
+  margin: 0 8px;
+}
+
+.policy-page__breadcrumbs-link {
+  color: var(--basic-white, #fff);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--basic-white--hover);
+  }
+}
+
+.policy-page__breadcrumbs-current {
+}
+
+.policy-page__title {
+  font-weight: 200;
+}
+
+.policy-page__content {
+  display: flex;
+  gap: var(--desktop-gap3);
+
+  /* .policy-page__column */
+  /* First list starts counting */
+  & > ol:first-of-type {
+    counter-reset: section;
+  }
+
+  /* Remove counter-reset from subsequent lists to continue counting */
+  & > ol {
+    & > li {
+      counter-increment: section;
+      font-weight: 400;
+
+      &::before {
+        content: counter(section) '. ';
+      }
+
+      & > ol {
+        counter-reset: subsection;
+        font-weight: 300;
+
+        & > li {
+          counter-increment: subsection;
+
+          &:only-child::before {
+            content: none;
+          }
+
+          &:not(:only-child)::before {
+            content: counter(section) '.' counter(subsection) '. ';
+          }
+
+          & > ul {
+            counter-reset: subsubsection;
+
+            & > li {
+              position: relative;
+              text-indent: 0.6rem;
+
+              &::before {
+                content: '-';
+                position: absolute;
+                text-indent: 0;
+                left: 0;
+              }
+            }
+          }
+
+          & > ol {
+            counter-reset: section;
+
+            & > li {
+              counter-increment: section;
+
+              &::before {
+                content: counter(section) ' )';
+              }
+            }
+          }
+
+          & > ol.policy-page__dots {
+            & > li {
+              position: relative;
+              text-indent: 0.8rem;
+
+              &::before {
+                content: '•';
+                position: absolute;
+                text-indent: 0;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ! custom gap */
+.policy-page__column {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(1.6 * var(--tablet-body1));
+}
+
+.policy-page__article-header {
+  font-weight: 400;
+}
+
+.policy-page__link {
+  display: none;
+}
+
+.policy-page__description {
+  margin-left: auto;
+}
