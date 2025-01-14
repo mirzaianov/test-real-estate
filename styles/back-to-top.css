@@ -12,20 +12,17 @@
   justify-content: center;
 }
 
-.back-to-top__wrapper {
+.back-to-top__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.back-to-top__icon {
-  width: 2rem;
-  height: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 .back-to-top__icon img {
-  width: 100%;
-  height: 100%;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Desktop screens: 1248px - x */
