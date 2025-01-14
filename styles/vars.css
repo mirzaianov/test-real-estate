@@ -15,6 +15,7 @@
   --basic-grey3: #d0d0d0;
   --basic-grey4: #f1f3f8;
   --basic-white: #ffffff;
+  --basic-green: #25d366;
 
   /* Hover rules */
   --p1--hover: var(--a1);
