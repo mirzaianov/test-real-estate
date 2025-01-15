@@ -88,6 +88,26 @@
     gap: 1.25rem;
   }
 
+  .header__navbar-item {
+    position: relative;
+  }
+
+  .header__navbar-item::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.5px;
+    background-color: var(--p2);
+    transition: width 0.3s ease;
+  }
+
+  .header__navbar-item:not(.header__navbar-item--active):hover::after {
+    width: 100%;
+  }
+
   .header__navbar-item a {
     color: var(--basic-white, #fff);
     transition: color 0.3s ease;
