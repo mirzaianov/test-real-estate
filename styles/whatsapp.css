@@ -5,6 +5,15 @@
   width: 8rem;
   height: 8rem;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover > svg > text {
+    fill: var(--p2, #e9dfc8);
+  }
+
+  &:hover .whatsapp {
+    background-color: var(--p2, #e9dfc8);
+  }
 }
 
 .whatsapp__wrapper > svg {
@@ -22,6 +31,7 @@
   line-height: 140%;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 .whatsapp {
@@ -37,6 +47,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--basic-green, #25d366);
+  transition: all 0.3s ease;
 }
 
 @keyframes rotate {

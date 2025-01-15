@@ -112,6 +112,15 @@
   transition: all 0.2s ease-in-out;
 }
 
+.contacts__form-label {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--a1, #b6a282);
+  }
+}
+
 .contacts__form-checkbox:checked::after {
   content: url('../assets/icons/checkmark.svg');
   display: block;

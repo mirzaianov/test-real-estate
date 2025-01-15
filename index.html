@@ -45,9 +45,29 @@
       <div class="grid-container">
         <div class="header__wrapper col-full">
           <button class="header__menu">
-            <img
-              src="assets/icons/menu.svg"
-              alt="Menu" />
+            <svg
+              class="header__menu-svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 12H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3 6H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3 18H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
           <div class="header__company-logo">
             <img
@@ -333,7 +353,7 @@
                     type="checkbox"
                     name="agreement" />
                   <label
-                    class="body3"
+                    class="body3 contacts__form-label"
                     for="contacts__form-checkbox"
                     title="Подтвердите обработку персональных данных для продолжения">
                     Я согласен(-а) на обработку персональных данных
@@ -390,9 +410,19 @@
       <a
         class="back-to-top__icon"
         href="#hero">
-        <img
-          src="assets/icons/chevron-up.svg"
-          alt="" />
+        <svg
+          class="back-to-top__svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24 20L16 12L8 20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
       </a>
     </div>
 
@@ -440,9 +470,29 @@
       <div class="menu__wrapper">
         <div class="menu__header">
           <button class="menu__close">
-            <img
-              src="assets/icons/menu.svg"
-              alt="Menu" />
+            <svg
+              class="menu__close-svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 12H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3 6H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3 18H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
           <div class="menu__company-logo">
             <img
@@ -470,20 +520,30 @@
           </nav>
         </div>
         <ul class="menu__list">
-          <li class="menu__item menu__item--active">
-            <a href="#hero"> Акции </a>
+          <li class="menu__item-wrapper menu__item-wrapper--active">
+            <div class="menu__item">
+              <a href="#hero"> Акции </a>
+            </div>
           </li>
-          <li class="menu__item">
-            <a href="#layouts"> Квартиры </a>
+          <li class="menu__item-wrapper">
+            <div class="menu__item">
+              <a href="#layouts"> Квартиры </a>
+            </div>
           </li>
-          <li class="menu__item">
-            <a href="#about"> О комплексе </a>
+          <li class="menu__item-wrapper">
+            <div class="menu__item">
+              <a href="#about"> О комплексе </a>
+            </div>
+          </li class="menu__item-wrapper">
+          <li class="menu__item-wrapper">
+            <div class="menu__item">
+              <a href="#map"> Расположение </a>
+            </div>
           </li>
-          <li class="menu__item">
-            <a href="#map"> Расположение </a>
-          </li>
-          <li class="menu__item">
-            <a href="#contacts"> Контакты </a>
+          <li class="menu__item-wrapper">
+            <div class="menu__item">
+              <a href="#contacts"> Контакты </a>
+            </div>
           </li>
         </ul>
       </div>

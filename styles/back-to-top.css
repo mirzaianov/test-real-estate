@@ -10,6 +10,15 @@
   display: none;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border: 0.5px solid var(--p2, #e9dfc8);
+  }
+
+  &:hover .back-to-top__svg {
+    color: var(--p2, #e9dfc8);
+  }
 }
 
 .back-to-top__icon {
@@ -20,7 +29,8 @@
   height: 100%;
 }
 
-.back-to-top__icon img {
+.back-to-top__svg {
+  color: var(--basic-white, #fff);
   width: 2rem;
   height: 2rem;
 }

@@ -18,6 +18,11 @@
 
 .whatsapp-modal__label {
   color: var(--basic-white, #fff);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--a1, #b6a282);
+  }
 }
 
 .whatsapp-modal__form {

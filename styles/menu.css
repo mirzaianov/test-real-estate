@@ -5,17 +5,16 @@
   top: 0;
   background: var(--basic-black, #343434);
   width: 15.3125rem;
-  left: -100%; /* Start off-screen */
+  left: -100%;
   bottom: 0;
   height: 100vh;
   height: 100dvh;
-  transition: left 0.3s ease-in-out; /* Smooth transition */
+  transition: left 0.3s ease-in-out;
 }
 
-/* TODO: Fix micro gap */
 .menu.open {
   gap: 0;
-  left: 0; /* Slide in */
+  left: 0;
 }
 
 .menu::backdrop {
@@ -46,6 +45,18 @@
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover .menu__close-svg {
+    color: var(--p2, #e9dfc8);
+  }
+}
+
+.menu__close-svg {
+  color: var(--basic-white, #fff);
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s ease;
 }
 
 .menu__company-logo {
@@ -85,25 +96,34 @@
   gap: 1rem;
 }
 
-.menu__item {
+.menu__item-wrapper {
   width: fit-content;
   display: flex;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   align-items: flex-start;
   gap: 0.625rem;
   font-size: 0.875rem;
   line-height: 140%;
   letter-spacing: 0.0875rem;
   text-transform: uppercase;
+
+  &:not(.menu__item-wrapper--active):hover .menu__item {
+    border-bottom: 0.5px solid var(--P2, #e9dfc8);
+  }
 }
 
-.menu__item--active {
+.menu__item-wrapper--active {
   border: 0.5px solid var(--p2, #e9dfc8);
 }
 
-.menu__item a {
+.menu__item {
+  padding: 0.5rem 0;
+  border: 0.5px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.menu__item-wrapper a {
   color: var(--basic-white, #fff);
-  transition: color 0.3s ease;
 }
 
 /* Tablet screens: 640px - x */

@@ -19,6 +19,18 @@
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover .header__menu-svg {
+    color: var(--p2, #e9dfc8);
+  }
+}
+
+.header__menu-svg {
+  color: var(--basic-white, #fff);
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
 }
 
 .header__company-logo {

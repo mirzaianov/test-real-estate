@@ -50,6 +50,11 @@ body {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--a1, #b6a282);
+  }
 }
 
 a:focus,
@@ -133,17 +138,37 @@ footer {
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid var(--p2, #e9dfc8);
+
+  &:hover {
+    background-color: var(--a1, #b6a282);
+    border: 1px solid var(--a1, #b6a282);
+  }
 }
 
 .button--secondary {
   color: var(--basic-white, #ffffff);
   background-color: var(--p1, #76564b);
+  border: 1px solid var(--p1, #76564b);
+
+  &:hover {
+    color: var(--basic-black, #343434);
+    background-color: var(--a1, #b6a282);
+    border: 1px solid var(--a1, #b6a282);
+  }
 }
 
 .button--stroke {
   color: var(--basic-white, #ffffff);
+  border: 1px solid var(--basic-white, #fff);
   background-color: transparent;
-  border: 1px solid var(--Basic-White, #fff);
+
+  &:hover {
+    color: var(--p1, #76564b);
+    border: 1px solid var(--p2, #e9dfc8);
+    background: var(--p2, #e9dfc8);
+  }
 }
 
 .button--hero {
