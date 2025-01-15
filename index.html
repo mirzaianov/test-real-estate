@@ -457,6 +457,7 @@
         <button class="button cookies__button button--stroke">Согласен</button>
       </div>
     </dialog>
+    <!-- # WhatsApp Modal -->
     <dialog
       class="whatsapp-modal"
       method="dialog">
@@ -492,6 +493,47 @@
             </div>
             <button
               class="button button--stroke button--hero button--whatsapp-modal"
+              >Отправить</button
+            >
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- # CTA Modal -->
+    <dialog
+      class="cta-modal"
+      method="dialog">
+      <div class="cta-modal__wrapper">
+        <div class="grid-container">
+          <form class="contacts__form cta-modal__form col-full">
+            <h4 class="contacts__form-title cta-modal__title"
+              >Оставьте свой номер, <br />
+              и мы вам перезвоним</h4
+            >
+            <div class="contacts__form-wrapper">
+              <div class="contacts__form-input-wrapper">
+                <input
+                  class="contacts__form-input"
+                  type="text"
+                  placeholder="Введите свое имя и фамилию" />
+                <input
+                  class="contacts__form-input"
+                  type="phone"
+                  placeholder="Введите свой номер" />
+              </div>
+              <div class="contacts__form-checkbox-wrapper">
+                <input
+                  id="contacts__form-checkbox"
+                  class="contacts__form-checkbox"
+                  type="checkbox" />
+                <label
+                  class="body3 cta-modal__label"
+                  for="contacts__form-checkbox"
+                  >Я согласен(-а) на обработку персональных данных</label
+                >
+              </div>
+            </div>
+            <button class="button button--stroke button--hero button--cta-modal"
               >Отправить</button
             >
           </form>

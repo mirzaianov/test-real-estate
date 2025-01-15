@@ -7,6 +7,12 @@ export default function startWhatsAppModal() {
     whatsappModal.showModal();
   });
 
+  whatsappModal.addEventListener('click', (event) => {
+    if (event.target === whatsappModal) {
+      whatsappModal.close();
+    }
+  });
+
   whatsappModalClose.addEventListener('click', () => {
     whatsappModal.close();
   });

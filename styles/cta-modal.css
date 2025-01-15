@@ -1,0 +1,29 @@
+.cta-modal::backdrop {
+  background: rgba(52, 52, 52, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+.cta-modal__wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-modal__title {
+  color: var(--basic-white, #fff);
+}
+
+.cta-modal__label {
+  color: var(--basic-white, #fff);
+}
+
+.cta-modal__form {
+  padding: 2rem 3rem;
+  background-color: var(--basic-black, #343434);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
