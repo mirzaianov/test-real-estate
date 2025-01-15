@@ -4,7 +4,6 @@ export default function startCookies() {
 
   // Open on page load with a delay
   setTimeout(() => {
-    cookies.showModal();
     cookies.classList.add('open');
   }, 2000);
 
@@ -16,7 +15,7 @@ export default function startCookies() {
   // Close on transition end
   cookies.addEventListener('transitionend', () => {
     if (!cookies.classList.contains('open')) {
-      cookies.close();
+      cookies.classList.remove('open');
     }
   });
 }
