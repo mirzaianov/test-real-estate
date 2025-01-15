@@ -26,7 +26,7 @@
       src="script.js"></script>
   </head>
   <body>
-    <!-- Preloader Modal -->
+    <!-- # Preloader Modal -->
     <div class="preloader">
       <div class="preloader__content">
         <div class="preloader__image">
@@ -39,6 +39,7 @@
         </div>
       </div>
     </div>
+
     <!-- # Header -->
     <header class="header">
       <div class="grid-container">
@@ -80,6 +81,8 @@
         </div>
       </div>
     </header>
+
+    <!-- # Main Content -->
     <main class="main">
       <!-- # Hero Section -->
       <section
@@ -324,6 +327,7 @@
         </div>
       </section>
     </main>
+
     <!-- # Footer -->
     <footer class="footer">
       <div class="grid-container">
@@ -354,6 +358,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- # Buttons -->
     <!-- # Back to top -->
     <div
       class="back-to-top"
@@ -366,6 +372,48 @@
           alt="" />
       </a>
     </div>
+
+    <!-- # WhatsApp -->
+    <div class="whatsapp__wrapper">
+      <svg viewBox="0 0 100 100">
+        <path
+          id="circle"
+          d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+        <text>
+          <textPath href="#circle">Заказать звонок</textPath>
+        </text>
+      </svg>
+      <div
+        class="whatsapp"
+        aria-label="Заказать звонок">
+        <a
+          class="whatsapp__icon"
+          href="#hero">
+          <img
+            src="assets/icons/whatsapp.svg"
+            alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- # Cookies Modal -->
+    <div class="cookies">
+      <div class="cookies__wrapper">
+        <div class="cookies__description">
+          Мы используем файлы куки.
+          <a
+            class="link"
+            href="policy-page.html"
+            target="_blank"
+            rel="noopener noreferrer">
+            Узнать подробнее
+          </a>
+        </div>
+        <button class="button cookies__button button--stroke">Согласен</button>
+      </div>
+    </div>
+
+    <!-- # Modals -->
     <!-- # Menu Modal -->
     <dialog class="menu">
       <div class="menu__wrapper">
@@ -419,44 +467,7 @@
         </ul>
       </div>
     </dialog>
-    <!-- # WhatsApp -->
-    <div class="whatsapp__wrapper">
-      <svg viewBox="0 0 100 100">
-        <path
-          id="circle"
-          d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
-        <text>
-          <textPath href="#circle">Заказать звонок</textPath>
-        </text>
-      </svg>
-      <div
-        class="whatsapp"
-        aria-label="Заказать звонок">
-        <a
-          class="whatsapp__icon"
-          href="#hero">
-          <img
-            src="assets/icons/whatsapp.svg"
-            alt="" />
-        </a>
-      </div>
-    </div>
-    <!-- # Cookies Modal -->
-    <div class="cookies">
-      <div class="cookies__wrapper">
-        <div class="cookies__description">
-          Мы используем файлы куки.
-          <a
-            class="link"
-            href="policy-page.html"
-            target="_blank"
-            rel="noopener noreferrer">
-            Узнать подробнее
-          </a>
-        </div>
-        <button class="button cookies__button button--stroke">Согласен</button>
-      </div>
-    </div>
+
     <!-- # WhatsApp Modal -->
     <dialog
       class="whatsapp-modal"
@@ -499,6 +510,7 @@
         </div>
       </div>
     </dialog>
+
     <!-- # CTA Modal -->
     <dialog
       class="cta-modal"
