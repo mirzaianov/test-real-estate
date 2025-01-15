@@ -37,7 +37,7 @@
 }
 
 .hero__slide-first {
-  background-image: var(--hero-bg-gradient), url('../assets/img/hero-bg1.png');
+  background-image: var(--hero-bg-gradient), url('../assets/img/hero-bg1.jpg');
 }
 
 .hero__slide-second {

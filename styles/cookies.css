@@ -2,7 +2,7 @@
   width: 75%;
   position: fixed;
   top: auto;
-  bottom: 3rem;
+  bottom: 1rem;
   right: -100%;
   left: auto;
   border: 1px solid var(--p1, #76564b);
@@ -12,7 +12,7 @@
 }
 
 .cookies.open {
-  right: 3rem;
+  right: 1rem;
 }
 
 .cookies::backdrop {
@@ -27,7 +27,7 @@
 }
 
 .cookies__description {
-  font-size: var(--tablet-body1);
+  font-size: var(--mobile-body1);
   color: var(--basic-white, #fff);
   flex: 1 0 0;
 }
@@ -37,6 +37,15 @@
   .cookies {
     width: 80%;
     max-width: 37.5rem;
+    bottom: 3rem;
+  }
+
+  .cookies.open {
+    right: 3rem;
+  }
+
+  .cookies__description {
+    font-size: var(--tablet-body1);
   }
 
   .cookies__wrapper {

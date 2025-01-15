@@ -5,6 +5,7 @@
   width: 8rem;
   height: 8rem;
   cursor: pointer;
+  display: none;
   transition: all 0.3s ease;
 
   &:hover > svg > text {
@@ -56,6 +57,11 @@
   }
 }
 
+/* Tablet screens: 640px - x */
+@media (min-width: 40rem) {
+}
+
+/* Desktop screens: 1248px - x */
 @media (min-width: 78rem) {
   .whatsapp__wrapper {
     display: block;
