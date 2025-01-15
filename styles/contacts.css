@@ -84,6 +84,7 @@
 }
 
 .contacts__form-input {
+  color: var(--basic-white, #fff);
   flex-basis: 100%;
   padding: 0.25rem 0rem 0.625rem 0rem;
   border-bottom: 1px solid var(--basic-white, #fff);
