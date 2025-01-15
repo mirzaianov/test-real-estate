@@ -114,6 +114,10 @@ input {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  outline: none;
 
   /* Reset basics */
   margin: 0;

@@ -106,7 +106,7 @@
 .contacts__form-checkbox {
   position: relative;
   height: 1.25rem;
-  aspect-ratio: 1 / 1;
+  width: 1.25rem;
   border: 1px solid var(--basic-white, #fff);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
