@@ -1,4 +1,4 @@
-export default function startCookies() {
+export default async function startCookies() {
   const cookies = document.querySelector('.cookies');
   const cookiesButton = document.querySelector('.cookies__button');
 

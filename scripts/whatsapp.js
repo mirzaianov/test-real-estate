@@ -1,4 +1,4 @@
-export default function startWhatsAppModal() {
+export default async function startWhatsAppModal() {
   const whatsapp = document.querySelector('.whatsapp__wrapper');
   const whatsappModal = document.querySelector('.whatsapp-modal');
   const whatsappModalForm = whatsappModal.querySelector('form');

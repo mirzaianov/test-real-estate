@@ -1,4 +1,4 @@
-export default function startCTA() {
+export default async function startCTA() {
   const ctaModal = document.querySelector('.cta-modal');
   const ctaForm = ctaModal.querySelector('form');
   const ctaModalOpenButtons = document.querySelectorAll('.button--cta');

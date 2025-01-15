@@ -1,4 +1,4 @@
-export default function openMenu() {
+export default async function openMenu() {
   const menu = document.querySelector('.menu');
   const openMenuButton = document.querySelector('.header__menu');
   const closeMenuButton = document.querySelector('.menu__close');

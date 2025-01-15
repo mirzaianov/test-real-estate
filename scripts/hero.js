@@ -1,4 +1,4 @@
-export default function startHeroSlides() {
+export default async function startHeroSlides() {
   const slides = document.querySelector('.hero__slides');
   const indicators = document.querySelectorAll('.hero__indicator');
 
