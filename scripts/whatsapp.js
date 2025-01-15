@@ -2,10 +2,10 @@ export default function startWhatsAppModal() {
   const whatsapp = document.querySelector('.whatsapp__wrapper');
   const whatsappModal = document.querySelector('.whatsapp-modal');
   const whatsappModalForm = whatsappModal.querySelector('form');
-  const whatsappModalOpen = document.querySelector('.whatsapp');
+  // const whatsapp = document.querySelector('.whatsapp');
   const whatsappModalClose = document.querySelector('.button--whatsapp-modal');
 
-  whatsappModalOpen.addEventListener('click', () => {
+  whatsapp.addEventListener('click', () => {
     whatsappModal.showModal();
   });
 
