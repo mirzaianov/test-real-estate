@@ -38,6 +38,12 @@
   object-position: center;
 }
 
+.layouts__description {
+  font-size: var(--mobile-h4);
+  font-weight: 200;
+  line-height: 1.4;
+}
+
 /* Tablet screens: 640px - x */
 @media (min-width: 40rem) {
   .layouts__flat {
@@ -47,6 +53,10 @@
 
   .layouts__flat-image {
     height: 22.3125rem;
+  }
+
+  .layouts__description {
+    font-size: clamp(var(--mobile-h4), 3vw, var(--tablet-h3));
   }
 }
 
@@ -74,7 +84,5 @@
 
   .layouts__description {
     font-size: var(--tablet-h3);
-    font-weight: 200;
-    line-height: 1.4;
   }
 }

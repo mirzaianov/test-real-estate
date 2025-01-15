@@ -8,6 +8,9 @@
     <meta
       name="format-detection"
       content="telephone=no" />
+    <meta
+      http-equiv="Cache-Control"
+      content="max-age=31536000" />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -16,6 +19,10 @@
       rel="icon"
       type="image/png"
       href="assets/icons/favicon-fallback.png" />
+    <link
+      rel="preload"
+      href="assets/img/hero-bg1.jpg"
+      as="image" />
     <link
       rel="stylesheet"
       href="style.css" />
@@ -46,7 +53,9 @@
     <header class="header">
       <div class="grid-container">
         <div class="header__wrapper col-full">
-          <button class="header__menu">
+          <button
+            class="header__menu"
+            aria-label="Открыть меню">
             <svg
               class="header__menu-svg"
               width="24"
@@ -115,7 +124,9 @@
             <div class="grid-container">
               <div class="hero__content col-full">
                 <h1>Все выгодные предложения от застройщика с3 “а112”</h1>
-                <button class="button button--hero button--cta"
+                <button
+                  class="button button--hero button--cta"
+                  aria-label="Открыть модальное окно"
                   >Оставить заявку</button
                 >
               </div>
@@ -125,7 +136,9 @@
             <div class="grid-container">
               <div class="hero__content col-full">
                 <h1>Акция на квартиры: Скидки от застройщика - 0,7%</h1>
-                <button class="button button--hero button--cta"
+                <button
+                  class="button button--hero button--cta"
+                  aria-label="Открыть модальное окно"
                   >Оставить заявку</button
                 >
               </div>
@@ -142,17 +155,25 @@
                   В 10 минутах от центра, экологически чистый район. Цены от
                   застройщика на квартиры и коммерческую недвижимость.
                 </h4>
-                <button class="button button--hero button--cta"
+                <button
+                  class="button button--hero button--cta"
+                  aria-label="Открыть модальное окно"
                   >Оставить заявку</button
                 >
               </div>
             </div>
           </div>
-          <div class="hero__slide hero__slide-first">
+          <div
+            class="hero__slide hero__slide-first"
+            aria-hidden="true">
             <div class="grid-container">
               <div class="hero__content col-full">
                 <h1>Все выгодные предложения от застройщика с3 “а112”</h1>
-                <button class="button button--hero">Оставить заявку</button>
+                <button
+                  tabindex="-1"
+                  class="button button--hero button--cta"
+                  >Оставить заявку</button
+                >
               </div>
             </div>
           </div>
@@ -180,10 +201,10 @@
         <div class="grid-container">
           <div class="layouts__wrapper col-full">
             <h2 class="layouts__title">Планировка квартир</h2>
-            <h4 class="layouts__description">
+            <h3 class="layouts__description">
               В домах предусмотрены квартиры с индивидуальной планировкой
               различных типов:
-            </h4>
+            </h3>
             <div class="layouts__flats-wrapper">
               <div class="layouts__flat">
                 <div class="layouts__flat-image">
@@ -194,7 +215,9 @@
                 <h4>Двухкомнатные квартиры</h4>
                 <span>средняя площадь 69 кв. м</span>
                 <span class="body2">стандарт</span>
-                <button class="button button--flat button--secondary"
+                <button
+                  class="button button--flat button--secondary"
+                  aria-label="Открыть модальное окно"
                   >Узнать цену</button
                 >
               </div>
@@ -207,7 +230,9 @@
                 <h4>Трехкомнатные квартиры</h4>
                 <span>средняя площадь 65 кв. м</span>
                 <span class="body2">евростандарт</span>
-                <button class="button button--flat button--secondary"
+                <button
+                  class="button button--flat button--secondary"
+                  aria-label="Открыть модальное окно"
                   >Узнать цену</button
                 >
               </div>
@@ -220,12 +245,16 @@
                 <h4>Четырехкомнатные квартиры</h4>
                 <span>средняя площадь 91 кв. м</span>
                 <span class="body2">евростандарт</span>
-                <button class="button button--flat button--secondary"
+                <button
+                  class="button button--flat button--secondary"
+                  aria-label="Открыть модальное окно"
                   >Узнать цену</button
                 >
               </div>
             </div>
-            <button class="button button--layouts button--secondary"
+            <button
+              class="button button--layouts button--secondary"
+              aria-label="Открыть модальное окно"
               >Оставить заявку</button
             >
           </div>
@@ -277,6 +306,7 @@
         class="map">
         <iframe
           src="https://yandex.com/map-widget/v1/?ll=129.724660%2C62.016724&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDkwMTYzMzMwEm3QoNC-0YHRgdC40Y8sINCg0LXRgdC_0YPQsdC70LjQutCwINCh0LDRhdCwICjQr9C60YPRgtC40Y8pLCDQr9C60YPRgtGB0LosINC_0YDQvtGB0L_QtdC60YIg0JvQtdC90LjQvdCwLCA1Ny8xIgoNtbgBQxVREXhC&z=16.68"
+          title="map"
           width="100%"
           height="100%"
           frameborder="1"
@@ -363,6 +393,7 @@
                 </div>
               </div>
               <button
+                aria-label="Отправить заявку"
                 type="submit"
                 class="button button--secondary button--hero button--contacts-form">
                 Отправить
@@ -458,7 +489,11 @@
             Узнать подробнее
           </a>
         </div>
-        <button class="button cookies__button button--stroke">Согласен</button>
+        <button
+          class="button cookies__button button--stroke"
+          aria-label="Согласиться с условиями"
+          >Согласен</button
+        >
       </div>
     </div>
 
@@ -467,7 +502,9 @@
     <dialog class="menu">
       <div class="menu__wrapper">
         <div class="menu__header">
-          <button class="menu__close">
+          <button
+            class="menu__close"
+            aria-label="Закрыть меню">
             <svg
               class="menu__close-svg"
               width="24"
@@ -585,6 +622,7 @@
               </div>
             </div>
             <button
+              aria-label="Отправить заявку"
               type="submit"
               class="button button--stroke button--hero button--whatsapp-modal"
               >Отправить</button
