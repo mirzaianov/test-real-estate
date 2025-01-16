@@ -767,5 +767,83 @@
         </svg>
       </a>
     </div>
+
+    <!-- # Modals -->
+    <!-- # Menu Modal -->
+    <dialog class="menu">
+      <div class="menu__wrapper">
+        <div class="menu__header">
+          <button
+            class="menu__close"
+            aria-label="Закрыть меню">
+            <svg
+              class="menu__close-svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 12H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3 6H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M3 18H21"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="menu__company-logo">
+            <img
+              fetchpriority="low"
+              src="assets/icons/company-logo.svg"
+              alt="Company Logo" />
+          </div>
+          <nav class="menu__navbar">
+            <ul class="menu__navbar-list">
+              <li class="menu__navbar-item menu__navbar-item--active body2"
+                ><a href="index.html#hero">Акции</a></li
+              >
+              <li class="menu__navbar-item body2"
+                ><a href="index.html#layouts">Квартиры</a></li
+              >
+              <li class="menu__navbar-item body2"
+                ><a href="index.html#about">О комплексе</a></li
+              >
+              <li class="menu__navbar-item body2"
+                ><a href="index.html#map">Расположение</a></li
+              >
+              <li class="menu__navbar-item body2"
+                ><a href="index.html#contacts">Контакты</a></li
+              >
+            </ul>
+          </nav>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item menu__item--active">
+            <a href="index.html#hero"> Акции </a>
+          </li>
+          <li class="menu__item">
+            <a href="index.html#layouts"> Квартиры </a>
+          </li>
+          <li class="menu__item">
+            <a href="index.html#about"> О комплексе </a>
+          </li>
+          <li class="menu__item">
+            <a href="index.html#map"> Расположение </a>
+          </li>
+          <li class="menu__item">
+            <a href="index.html#contacts"> Контакты </a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
   </body>
 </html>
