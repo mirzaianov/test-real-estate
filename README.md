@@ -25,6 +25,7 @@ A landing page for a real estate production company
 
 1. Run `index.html` on Live Server or open it in your favorite browser
 2. Or open the [deployed version](https://real-estate-mirzaianov.vercel.app/)
+3. Or deploy the WordPress version on your hosting using files from the `_deploy` folder
 
 ## License
 
