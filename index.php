@@ -1,120 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="format-detection"
-      content="telephone=no" />
-    <meta
-      http-equiv="Cache-Control"
-      content="max-age=31536000" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="assets/icons/favicon.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/icons/favicon-fallback.png" />
-    <link
-      rel="preload"
-      href="assets/img/hero-bg1.jpg"
-      as="image" />
-    <link
-      rel="stylesheet"
-      href="style.css" />
-    <title>Жилой комплекс "Золотой час"</title>
-    <meta
-      name="description"
-      content='Все выгодные предложения от застройщика СЗ "А112"' />
-    <script
-      type="module"
-      src="script.js"></script>
-  </head>
-  <body>
-    <!-- # Preloader Modal -->
-    <div class="preloader">
-      <div class="preloader__content">
-        <div class="preloader__image">
-          <img
-            fetchpriority="low"
-            src="assets/img/404.png"
-            alt="" />
-        </div>
-        <div class="preloader__progress">
-          <div class="preloader__progress-bar"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- # Header -->
-    <header class="header">
-      <div class="grid-container">
-        <div class="header__wrapper col-full">
-          <button
-            class="header__menu"
-            aria-label="Открыть меню">
-            <svg
-              class="header__menu-svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3 12H21"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path
-                d="M3 6H21"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path
-                d="M3 18H21"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-          <div class="header__company-logo">
-            <img
-              fetchpriority="high"
-              src="assets/icons/company-logo.svg"
-              alt="Company Logo" />
-          </div>
-          <nav class="header__navbar">
-            <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--active body2"
-                ><a href="#hero">Акции</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="#layouts">Квартиры</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="#about">О комплексе</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="#map">Расположение</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="#contacts">Контакты</a></li
-              >
-            </ul>
-          </nav>
-          <div class="header__company-name">
-            <img
-              fetchpriority="high"
-              src="assets/icons/company-name.svg"
-              alt="Company Name" />
-          </div>
-        </div>
-      </div>
-    </header>
+<?php
+  get_header();
+?>
 
     <!-- # Main Content -->
     <main class="main">
@@ -122,64 +8,80 @@
       <section
         id="hero"
         class="hero">
-        <div class="hero__slides">
-          <div class="hero__slide hero__slide-first">
-            <div class="grid-container">
-              <div class="hero__content col-full">
-                <h1>Все выгодные предложения от застройщика с3 “а112”</h1>
-                <button
-                  class="button button--hero button--cta"
-                  aria-label="Открыть модальное окно"
-                  >Оставить заявку</button
-                >
-              </div>
-            </div>
-          </div>
-          <div class="hero__slide hero__slide-second">
-            <div class="grid-container">
-              <div class="hero__content col-full">
-                <h1>Акция на квартиры: Скидки от застройщика - 0,7%</h1>
-                <button
-                  class="button button--hero button--cta"
-                  aria-label="Открыть модальное окно"
-                  >Оставить заявку</button
-                >
-              </div>
-            </div>
-          </div>
-          <div class="hero__slide hero__slide-third">
-            <div class="grid-container">
-              <div class="hero__content col-full">
-                <h1
-                  >квартиры в новостройке в жилом комплексе “золотой час” в
-                  г.Якутске</h1
-                >
-                <h4>
-                  В 10 минутах от центра, экологически чистый район. Цены от
-                  застройщика на квартиры и коммерческую недвижимость.
-                </h4>
-                <button
-                  class="button button--hero button--cta"
-                  aria-label="Открыть модальное окно"
-                  >Оставить заявку</button
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="hero__slide hero__slide-first"
-            aria-hidden="true">
-            <div class="grid-container">
-              <div class="hero__content col-full">
-                <h1>Все выгодные предложения от застройщика с3 “а112”</h1>
-                <button
-                  tabindex="-1"
-                  class="button button--hero button--cta"
-                  >Оставить заявку</button
-                >
-              </div>
-            </div>
-          </div>
+        <?php
+          $all_posts = get_posts( array(
+            'numberposts' => -1,
+            'category_name'    => 'hero_slider',
+            'suppress_filters' => true,
+          ) );
+
+          $length = count($all_posts);
+          $total_width = ($length + 1) * 100;
+
+        ?>
+          <div class="hero__slides" style="width: <?php echo $total_width; ?>%">
+
+          <?php
+
+            $my_posts = get_posts( array(
+              'numberposts' => -1,
+              'category_name'    => 'hero_slider',
+              'orderby'     => 'title',
+              'order'       => 'ASC',
+              'post_type'   => 'post',
+              'suppress_filters' => true,
+            ) );
+
+            global $post;
+
+            $first_post = $my_posts[0];
+
+            foreach( $my_posts as $post ){
+              setup_postdata( $post );
+
+              ?>
+                <div
+                  class="hero__slide hero__slide-first"
+                  style="background-image: url('<?php the_field('hero_slide_image'); ?>">
+                  <div class="grid-container">
+                    <div class="hero__content col-full">
+                      <h1><?php the_field('hero_slide_title'); ?></h1>
+                      <h4><?php the_field('hero_slide_description'); ?></h4>
+                      <button
+                        class="button button--hero button--cta"
+                        aria-label="Открыть модальное окно"
+                        ><?php the_field('hero_slide_button'); ?></button
+                      >
+                    </div>
+                  </div>
+                </div>
+              <?php
+            }
+
+            $post = $first_post;
+            setup_postdata( $post );
+
+              ?>
+                <div
+                  class="hero__slide hero__slide-first hero__slide-repeat"
+                  style="background-image: url('<?php the_field('hero_slide_image'); ?>">
+                  <div class="grid-container">
+                    <div class="hero__content col-full">
+                      <h1><?php the_field('hero_slide_title'); ?></h1>
+                      <h4><?php the_field('hero_slide_description'); ?></h4>
+                      <button
+                        class="button button--hero button--cta"
+                        aria-label="Открыть модальное окно"
+                        ><?php the_field('hero_slide_button'); ?></button>
+                    </div>
+                  </div>
+                </div>
+              <?php
+
+            wp_reset_postdata();
+
+          ?>
+
         </div>
         <div class="hero__indicators">
           <div class="grid-container">
@@ -203,17 +105,16 @@
         class="layouts">
         <div class="grid-container">
           <div class="layouts__wrapper col-full">
-            <h2 class="layouts__title">Планировка квартир</h2>
+            <h2 class="layouts__title"><?php the_field('layouts_title'); ?></h2>
             <h3 class="layouts__description">
-              В домах предусмотрены квартиры с индивидуальной планировкой
-              различных типов:
+              <?php the_field('layouts_description'); ?>
             </h3>
             <div class="layouts__flats-wrapper">
               <div class="layouts__flat">
                 <div class="layouts__flat-image">
                   <img
                     fetchpriority="low"
-                    src="assets/img/layouts-flat2.png"
+                    src="<?php echo bloginfo('template_url'); ?>/assets/img/layouts-flat2.png"
                     alt="Планировка двухкомнатной квартиры" />
                 </div>
                 <h4>Двухкомнатные квартиры</h4>
@@ -229,7 +130,7 @@
                 <div class="layouts__flat-image">
                   <img
                     fetchpriority="low"
-                    src="assets/img/layouts-flat3.png"
+                    src="<?php echo bloginfo('template_url'); ?>/assets/img/layouts-flat3.png"
                     alt="Планировка трехкомнатной квартиры" />
                 </div>
                 <h4>Трехкомнатные квартиры</h4>
@@ -245,7 +146,7 @@
                 <div class="layouts__flat-image">
                   <img
                     fetchpriority="low"
-                    src="assets/img/layouts-flat4.png"
+                    src="<?php echo bloginfo('template_url'); ?>/assets/img/layouts-flat4.png"
                     alt="Планировка четырехкомнатной квартиры" />
                 </div>
                 <h4>Четырехкомнатные квартиры</h4>
@@ -272,36 +173,31 @@
         class="about">
         <div class="grid-container">
           <div class="about__wrapper col-full">
-            <h2 class="about__title">О комплексе</h2>
+            <h2 class="about__title"><?php the_field('about_title'); ?></h2>
             <div class="about__description">
               <h4>
-                ЖК «Золотой час» – это мир в гармонии с природой, уединением и
-                душевным спокойствием. Качественные дома позволят вам окунуться
-                в атмосферу уюта, тепла и безопасности. Концепция проекта
-                предусматривает создание полноценного города в городе, где есть
-                все самое необходимое для комфортной жизни. Постройте свой мир
-                вместе с нами!
+              <?php the_field('about_description_1'); ?>
               </h4>
               <h4>
-                Более подробно о комплексе вы можете ознакомиться <br />
-                на
+                <?php the_field('about_description_2'); ?>
                 <a
                   class="link"
                   href="https://ya112.ru/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >основном сайте</a
                 >
+                  <?php the_field('about_link'); ?>
+                </a>
               </h4>
             </div>
             <div class="about__deadline">
-              <span class="about__deadline-title">Срок сдачи</span>
-              <h4 class="about__deadline-date">II квартал 2025 г.</h4>
+              <span class="about__deadline-title"><?php the_field('about_deadline_title'); ?></span>
+              <h4 class="about__deadline-date"><?php the_field('about_deadline_date'); ?></h4>
             </div>
             <div class="about__image">
               <img
                 fetchpriority="low"
-                src="assets/img/about-house.png"
+                src="<?php echo bloginfo('template_url'); ?>/assets/img/about-house.png"
                 alt="Дом" />
             </div>
           </div>
@@ -411,60 +307,7 @@
       </section>
     </main>
 
-    <!-- # Footer -->
-    <footer class="footer">
-      <div class="grid-container">
-        <div class="footer__wrapper col-full">
-          <p class="footer__policy">
-            Вся информация о стоимости, технических характеристиках, наличии, а
-            также специальных предложениях, размещенных на данном сайте, носит
-            исключительно ознакомительный характер, и ни при каких условиях не
-            является публичной офертой, определяемой положениями ст. 437 ГК РФ.
-            Представленные на сайте изображения объектов долевого строительства
-            носят предварительный ознакомительный характер и могут отличаться от
-            фактических проектных решений, реализуемых застройщиком.
-          </p>
-          <div class="footer__description">
-            <div class="footer__about">
-              <span>2024 © Все права защищены</span>
-              <span>Политика конфиденциальности</span>
-              <span>Разработка и хостинг Smart Unit</span>
-            </div>
-            <a
-              href="https://ya112.ru/"
-              class="link footer__link"
-              target="_blank"
-              rel="noopener noreferrer">
-              Ссылка на основной сайт
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- # Buttons -->
-    <!-- # Back to top -->
-    <div class="back-to-top">
-      <a
-        class="back-to-top__icon"
-        href="#">
-        <svg
-          class="back-to-top__svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M24 20L16 12L8 20"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </a>
-    </div>
-
-    <!-- # WhatsApp -->
+        <!-- # WhatsApp -->
     <div class="whatsapp__wrapper">
       <svg viewBox="0 0 100 100">
         <path
@@ -478,7 +321,7 @@
         <div class="whatsapp__icon">
           <img
             fetchpriority="high"
-            src="assets/icons/whatsapp.svg"
+            src="<?php echo bloginfo('template_url'); ?>/assets/icons/whatsapp.svg"
             alt="" />
         </div>
       </div>
@@ -491,7 +334,7 @@
           Мы используем файлы куки.
           <a
             class="link"
-            href="policy-page.html"
+            href="<?php echo site_url('/page-policy'); ?>"
             target="_blank"
             rel="noopener noreferrer">
             Узнать подробнее
@@ -540,7 +383,7 @@
           <div class="menu__company-logo">
             <img
               fetchpriority="low"
-              src="assets/icons/company-logo.svg"
+              src="<?php echo bloginfo('template_url'); ?>/assets/icons/company-logo.svg"
               alt="Company Logo" />
           </div>
           <nav class="menu__navbar">
@@ -697,5 +540,7 @@
         </div>
       </div>
     </dialog>
-  </body>
-</html>
+
+<?php
+  get_footer();
+?>

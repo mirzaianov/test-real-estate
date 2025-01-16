@@ -1,5 +1,5 @@
 .page-404 {
-  padding-block: 3rem;
+  padding-block: 6rem;
 }
 
 .page-404__header {
@@ -83,5 +83,12 @@
 
   .page-404__description {
     font-size: var(--tablet-h4);
+  }
+}
+
+/* Desktop screens: 1248px - x */
+@media (min-width: 78rem) {
+  .policy-page {
+    padding-top: 10.4375rem;
   }
 }

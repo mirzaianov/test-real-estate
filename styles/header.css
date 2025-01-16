@@ -43,6 +43,11 @@
   flex-shrink: 0;
 }
 
+.header__company-logo img {
+  width: 100%;
+  height: 100%;
+}
+
 .header__navbar {
   display: none;
 }

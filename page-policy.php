@@ -1,86 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="format-detection"
-      content="telephone=no" />
-    <meta
-      http-equiv="Cache-Control"
-      content="max-age=31536000" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="assets/icons/favicon.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/icons/favicon-fallback.png" />
-    <link
-      rel="preload"
-      href="assets/img/hero-bg1.jpg"
-      as="image" />
-    <link
-      rel="stylesheet"
-      href="style.css" />
-    <title>Политика конфиденциальности</title>
-    <meta
-      name="description"
-      content='Политика конфиденциальности застройщика СЗ "А112"' />
-    <script
-      type="module"
-      src="script.js"></script>
-  </head>
-  <body>
-    <!-- # Header -->
-    <header class="header policy-page__header">
-      <div class="grid-container">
-        <div class="header__wrapper col-full">
-          <button
-            class="header__menu"
-            aria-label="Открыть меню">
-            <img
-              fetchpriority="high"
-              src="assets/icons/menu.svg"
-              alt="Menu" />
-          </button>
-          <div class="header__company-logo">
-            <img
-              fetchpriority="high"
-              src="assets/icons/company-logo.svg"
-              alt="Company Logo" />
-          </div>
-          <nav class="header__navbar">
-            <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--active body2"
-                ><a href="index.html#hero">Акции</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="index.html#layouts">Квартиры</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="index.html#about">О комплексе</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="index.html#map">Расположение</a></li
-              >
-              <li class="header__navbar-item body2"
-                ><a href="index.html#contacts">Контакты</a></li
-              >
-            </ul>
-          </nav>
-          <div class="header__company-name">
-            <img
-              fetchpriority="high"
-              src="assets/icons/company-name.svg"
-              alt="Company Name" />
-          </div>
-        </div>
-      </div>
-    </header>
+<?php
+/*
+Template Name: Политика конфиденциальности
+*/
+
+?>
+
+<?php
+  get_header();
+?>
+
+    <!-- # Main Content -->
     <main class="main">
       <section class="policy-page">
         <div class="grid-container">
@@ -92,7 +21,7 @@
                 <li class="policy-page__breadcrumbs-item body2"
                   ><a
                     class="policy-page__breadcrumbs-link"
-                    href="index.html"
+                    href="<?php echo home_url(); ?>"
                     >Главная</a
                   ></li
                 >
@@ -100,16 +29,17 @@
                   ><span
                     class="policy-page__breadcrumbs-current"
                     aria-current="page"
-                    >Политика конфиденциальности</span
-                  ></li
-                >
+                    >
+                    <?php the_field('policy_page_title'); ?>
+                    </span>
+                  </li>
               </ol>
             </nav>
-            <h1 class="policy-page__title">Политика конфиденциальности</h1>
+            <h1 class="policy-page__title"><?php the_field('policy_page_title'); ?></h1>
             <div class="policy-page__content">
               <ol class="policy-page__column">
-                <li
-                  >Общие положения
+                <li>
+                  Общие положения
                   <ol>
                     <li>
                       <!-- TODO Fix a mistype -->
@@ -716,134 +646,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="grid-container">
-        <div class="footer__wrapper col-full">
-          <p class="footer__policy">
-            Вся информация о стоимости, технических характеристиках, наличии, а
-            также специальных предложениях, размещенных на данном сайте, носит
-            исключительно ознакомительный характер, и ни при каких условиях не
-            является публичной офертой, определяемой положениями ст. 437 ГК РФ.
-            Представленные на сайте изображения объектов долевого строительства
-            носят предварительный ознакомительный характер и могут отличаться от
-            фактических проектных решений, реализуемых застройщиком.
-          </p>
-          <div class="footer__description policy-page__description">
-            <div class="footer__about">
-              <span>2024 © Все права защищены</span>
-              <span>Политика конфиденциальности</span>
-              <span>Разработка и хостинг Smart Unit</span>
-            </div>
-            <a
-              href="https://ya112.ru/"
-              class="link footer__link policy-page__link"
-              target="_blank"
-              rel="noopener noreferrer">
-              Ссылка на основной сайт
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-    <!-- # Buttons -->
-    <!-- # Back to top -->
-    <div class="back-to-top">
-      <a
-        class="back-to-top__icon"
-        href="#">
-        <svg
-          class="back-to-top__svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M24 20L16 12L8 20"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </a>
-    </div>
-
-    <!-- # Modals -->
-    <!-- # Menu Modal -->
-    <dialog class="menu">
-      <div class="menu__wrapper">
-        <div class="menu__header">
-          <button
-            class="menu__close"
-            aria-label="Закрыть меню">
-            <svg
-              class="menu__close-svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3 12H21"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path
-                d="M3 6H21"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path
-                d="M3 18H21"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-          <div class="menu__company-logo">
-            <img
-              fetchpriority="low"
-              src="assets/icons/company-logo.svg"
-              alt="Company Logo" />
-          </div>
-          <nav class="menu__navbar">
-            <ul class="menu__navbar-list">
-              <li class="menu__navbar-item menu__navbar-item--active body2"
-                ><a href="index.html#hero">Акции</a></li
-              >
-              <li class="menu__navbar-item body2"
-                ><a href="index.html#layouts">Квартиры</a></li
-              >
-              <li class="menu__navbar-item body2"
-                ><a href="index.html#about">О комплексе</a></li
-              >
-              <li class="menu__navbar-item body2"
-                ><a href="index.html#map">Расположение</a></li
-              >
-              <li class="menu__navbar-item body2"
-                ><a href="index.html#contacts">Контакты</a></li
-              >
-            </ul>
-          </nav>
-        </div>
-        <ul class="menu__list">
-          <li class="menu__item menu__item--active">
-            <a href="index.html#hero"> Акции </a>
-          </li>
-          <li class="menu__item">
-            <a href="index.html#layouts"> Квартиры </a>
-          </li>
-          <li class="menu__item">
-            <a href="index.html#about"> О комплексе </a>
-          </li>
-          <li class="menu__item">
-            <a href="index.html#map"> Расположение </a>
-          </li>
-          <li class="menu__item">
-            <a href="index.html#contacts"> Контакты </a>
-          </li>
-        </ul>
-      </div>
-    </dialog>
-  </body>
-</html>
+<?php
+  get_footer();
+?>

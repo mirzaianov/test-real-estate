@@ -1,5 +1,5 @@
 .policy-page {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .policy-page__header {
@@ -158,5 +158,12 @@
     display: flex;
     flex-direction: row;
     gap: var(--desktop-gap3);
+  }
+}
+
+/* Desktop screens: 1248px - x */
+@media (min-width: 78rem) {
+  .policy-page {
+    padding-top: 10.4375rem;
   }
 }
